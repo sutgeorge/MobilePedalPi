@@ -2,6 +2,7 @@
 A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for a commercial guitar pedal. 
 
 ## Chronological to-do list
+- [ ] Create a PERT diagram
 - [ ] Read about Puredata
 - [ ] Read about Puredata guitar effects
 - [ ] Watch Puredata tutorials
