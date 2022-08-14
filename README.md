@@ -36,4 +36,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [How to create a PERT chart](https://asana.com/resources/pert-chart)
 - [9 Best Open-Source Gantt Chart Software For Linux](https://itsfoss.com/open-source-gantt-chart/) 
 
+### Puredata
+- [Puredata Tutorial](https://puredata.info/docs/StartHere/)
+- [Puredata error](https://lists.puredata.info/pipermail/pd-list/2015-04/109948.html)
 
