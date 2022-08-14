@@ -2,7 +2,8 @@
 A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for a commercial guitar pedal. 
 
 ## Chronological to-do list
-- [ ] Create a PERT diagram
+- [X] Create to-do list
+- [X] Establish in Google Calendar a timeframe for working on the project
 - [ ] Read about Puredata
 - [ ] Read about Puredata guitar effects
 - [ ] Watch Puredata tutorials
@@ -28,3 +29,11 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [ ] Test it
 - [ ] Create a demo video
 - [ ] Update README.md
+
+## Resources
+
+### Project management
+- [How to create a PERT chart](https://asana.com/resources/pert-chart)
+- [9 Best Open-Source Gantt Chart Software For Linux](https://itsfoss.com/open-source-gantt-chart/) 
+
+
