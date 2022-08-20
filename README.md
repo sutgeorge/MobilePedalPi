@@ -37,6 +37,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [9 Best Open-Source Gantt Chart Software For Linux](https://itsfoss.com/open-source-gantt-chart/) 
 
 ### Puredata
+- [Puredata Reference Card](https://puredata.info/docs/tutorials/pd-refcard)
 - [Puredata Tutorial](https://puredata.info/docs/StartHere/)
 - [Puredata error: "priority 6 scheduling failed; running at normal priority"](https://www.reddit.com/r/puredata/comments/88uwyo/installing_pd_for_linux_mint_18/)
 > Solution:
@@ -53,4 +54,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 >	6. Reboot
 - [Pure Data Guitar Pedal - Pure Data Example Project](https://www.youtube.com/watch?v=DJCoOr4uHD4)
 - [Sound Simulator - Pure Data Tutorial #1](https://www.youtube.com/watch?v=1o5Wasmd8yU)
+- [Sound Simulator - Pure Data Tutorial #2](https://www.youtube.com/watch?v=JtT_bZeoKzk)
+
+
 
