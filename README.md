@@ -4,8 +4,8 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 ## Chronological to-do list
 - [X] Create to-do list
 - [X] Establish in Google Calendar a timeframe for working on the project
-- [ ] Read about Puredata
-- [ ] Read about Puredata guitar effects
+- [X] Read about Puredata
+- [X] Read about Puredata guitar effects
 - [ ] Watch Puredata tutorials
 - [ ] Create a Puredata effect
 - [ ] Test whether the Puredata effect works with the guitar (Big Jack/small Jack adapter for the guitar cable plugged into the laptop)
@@ -51,4 +51,5 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 >		#@audio   -  nice       -19
 > 
 >	6. Reboot
+- [Pure Data Guitar Pedal - Pure Data Example Project](https://www.youtube.com/watch?v=DJCoOr4uHD4)
 
