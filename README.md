@@ -52,4 +52,5 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 > 
 >	6. Reboot
 - [Pure Data Guitar Pedal - Pure Data Example Project](https://www.youtube.com/watch?v=DJCoOr4uHD4)
+- [Sound Simulator - Pure Data Tutorial #1](https://www.youtube.com/watch?v=1o5Wasmd8yU)
 
