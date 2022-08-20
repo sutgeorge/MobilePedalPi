@@ -38,5 +38,17 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 
 ### Puredata
 - [Puredata Tutorial](https://puredata.info/docs/StartHere/)
-- [Puredata error](https://lists.puredata.info/pipermail/pd-list/2015-04/109948.html)
+- [Puredata error: "priority 6 scheduling failed; running at normal priority"](https://www.reddit.com/r/puredata/comments/88uwyo/installing_pd_for_linux_mint_18/)
+> Solution:
+>	1. Update Kernel    
+>	2. Create audio group: sudo groupadd audio
+>	3. Add your user to audio group: sudo gpasswd -a <username> audio
+>	4. Create group limits file for audio group: sudo nano /etc/security/limits.d/audio.conf
+>	5. Add the following lines to audio.conf:
+>  
+> 		@audio   -  rtprio     95
+>		@audio   -  memlock    unlimited
+>		#@audio   -  nice       -19
+> 
+>	6. Reboot
 
