@@ -13,7 +13,6 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [ ] Read about Hifiberry DAC+ADC soundcard
 - [ ] Read about Kotlin Jetpack Compose
 - [ ] Read about other Raspberry Pi guitar pedal projects with Hifiberry
-- [ ] Read about Bluetooth modules for Raspberry Pi
 - [ ] Read about Kotlin Android Bluetooth connectivity
 - [ ] Watch some Kotlin Android tutorials
 - [ ] Create UML diagrams for the app structure
@@ -36,10 +35,11 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [How to create a PERT chart](https://asana.com/resources/pert-chart)
 - [9 Best Open-Source Gantt Chart Software For Linux](https://itsfoss.com/open-source-gantt-chart/) 
 
-### Puredata
-- [Puredata Reference Card](https://puredata.info/docs/tutorials/pd-refcard)
-- [Puredata Tutorial](https://puredata.info/docs/StartHere/)
-- [Puredata error: "priority 6 scheduling failed; running at normal priority"](https://www.reddit.com/r/puredata/comments/88uwyo/installing_pd_for_linux_mint_18/)
+### Pure Data
+- [Pure Data Reference Card](https://puredata.info/docs/tutorials/pd-refcard)
+- [Pure Data Filters](https://archive.flossmanuals.net/pure-data/audio-tutorials/filters.html)
+- [Pure Data Tutorial](https://puredata.info/docs/StartHere/)
+- [Pure Data error: "priority 6 scheduling failed; running at normal priority"](https://www.reddit.com/r/puredata/comments/88uwyo/installing_pd_for_linux_mint_18/)
 > Solution:
 >	1. Update Kernel    
 >	2. Create audio group: sudo groupadd audio
