@@ -37,6 +37,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 
 ### Pure Data
 - [Pure Data Reference Card](https://puredata.info/docs/tutorials/pd-refcard)
+- [Running Pure Data on a headless Raspberry Pi](https://guitarextended.wordpress.com/2012/08/28/running-pd-on-a-headless-raspberry-pi/)
 - [Pure Data Filters](https://archive.flossmanuals.net/pure-data/audio-tutorials/filters.html)
 - [Pure Data Tutorial](https://puredata.info/docs/StartHere/)
 - [Pure Data error: "priority 6 scheduling failed; running at normal priority"](https://www.reddit.com/r/puredata/comments/88uwyo/installing_pd_for_linux_mint_18/)
@@ -55,6 +56,14 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Pure Data Guitar Pedal - Pure Data Example Project](https://www.youtube.com/watch?v=DJCoOr4uHD4)
 - [Sound Simulator - Pure Data Tutorial #1 - Simple Button + Message + Object patch](https://www.youtube.com/watch?v=1o5Wasmd8yU)
 - [Sound Simulator - Pure Data Tutorial #2 - Additive Synth, Overtone Generator](https://www.youtube.com/watch?v=JtT_bZeoKzk)
-- [Sound Simulator - Pure Data Tutorial #2 - Subtractive Synth, Low-Pass, High-Pass, Band-pass Filters](https://www.youtube.com/watch?v=FVYkQFP1_D4)
+- [Sound Simulator - Pure Data Tutorial #3 - Subtractive Synth, Low-Pass, High-Pass, Band-pass Filters](https://www.youtube.com/watch?v=FVYkQFP1_D4)
+- [Sound Simulator - Pure Data Tutorial #4 - Attack-Decay-Sustain-Release Envelope](https://www.youtube.com/watch?v=W7Pp-DhMA_E)
 
+## Setup diagram
+
+![MobilePedalPi setup diagram](/diagram-images/diagram.png)
+
+## Some remarks
+- 1/4" &rarr; 6.35 mm
+- 1/8" &rarr; 3.5 mm
 
