@@ -9,13 +9,13 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Watch Puredata tutorials on basic objects
 - [X] Create a Puredata effect
 - [X] Create basic ugly diagram of the project
+- [X] Read about other Raspberry Pi guitar pedal projects with Hifiberry
 - [ ] Watch Pure Data tutorials on input devices 
 - [ ] Watch Pure Data tutorials on various effects
 - [ ] Design the circuit diagram (Raspberry Pi board + Hifiberry DAC+ADC soundcard + RCA / Jack adapters)
 - [ ] Read about how to install Puredata on Raspberry Pi and save the link in the "Resources" section
 - [ ] Read about how to install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
 - [ ] Read about Kotlin Jetpack Compose
-- [X] Read about other Raspberry Pi guitar pedal projects with Hifiberry
 - [ ] Read about Kotlin Android Bluetooth connectivity
 - [ ] Watch some Kotlin Android tutorials
 - [ ] Design UI/UX
@@ -41,6 +41,9 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [9 Best Open-Source Gantt Chart Software For Linux](https://itsfoss.com/open-source-gantt-chart/) 
 
 ### Pure Data
+- [Pure Data documentation](http://archive.flossmanuals.net/pure-data/)
+- [Pure Data documentation - PDF](http://archive.flossmanuals.net/_booki/pure-data/pure-data.pdf)
+- [List of Pure Data objects](http://blazicek.net/list_of_pure_data_objects.html)
 - [Pure Data Reference Card](https://puredata.info/docs/tutorials/pd-refcard)
 - [Running Pure Data on a headless Raspberry Pi](https://guitarextended.wordpress.com/2012/08/28/running-pd-on-a-headless-raspberry-pi/)
 - [Pure Data Filters](https://archive.flossmanuals.net/pure-data/audio-tutorials/filters.html)
@@ -63,6 +66,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Sound Simulator - Pure Data Tutorial #2 - Additive Synth, Overtone Generator](https://www.youtube.com/watch?v=JtT_bZeoKzk)
 - [Sound Simulator - Pure Data Tutorial #3 - Subtractive Synth, Low-Pass, High-Pass, Band-pass Filters](https://www.youtube.com/watch?v=FVYkQFP1_D4)
 - [Sound Simulator - Pure Data Tutorial #4 - Attack-Decay-Sustain-Release Envelope](https://www.youtube.com/watch?v=W7Pp-DhMA_E)
+- [Pd for Airports](https://www.youtube.com/watch?v=7sTrn39TT7k)
 
 ### Hifiberry
 
@@ -79,3 +83,4 @@ Currently empty.
 ## Other projects
 - [Multi-effects guitar pedal with touchscreen](https://www.youtube.com/watch?v=JoJEhhwpi9Q)
 - [NeuralPi](https://www.youtube.com/watch?v=_3zFD6h6Wrc)
+- [Guitar audio to polyphonic MIDI in real time with Pure Data and Python](https://www.youtube.com/watch?v=GwEdOo7iPuA)
