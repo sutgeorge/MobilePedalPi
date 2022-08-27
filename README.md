@@ -13,7 +13,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Watch Pure Data tutorials on input devices and subpatches
 - [X] Watch Pure Data tutorials on various effects
 - [X] Read about how to install Puredata on Raspberry Pi and save the link in the "Resources" section
-- [ ] Read about how to install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
+- [X] Read about how to install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
 - [ ] Read about Kotlin Jetpack Compose
 - [ ] Read about Kotlin Android Bluetooth connectivity
 - [ ] Watch some Kotlin Android tutorials
@@ -70,7 +70,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 
 ### Hifiberry
 
-Currently empty.
+- [Updating the kernel for the Hifiberry DAC+ADC soundcard drivers (might not be necessary nowadays, the kernel most likely contains the necessary drivers)](https://www.hifiberry.com/docs/archive/deploying-a-new-linux-kernel-onto-a-raspbian-based-system/)
 
 ## Setup diagram
 
