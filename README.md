@@ -10,10 +10,9 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Create a Puredata effect
 - [X] Create basic ugly diagram of the project
 - [X] Read about other Raspberry Pi guitar pedal projects with Hifiberry
-- [ ] Watch Pure Data tutorials on input devices 
-- [ ] Watch Pure Data tutorials on various effects
-- [ ] Design the circuit diagram (Raspberry Pi board + Hifiberry DAC+ADC soundcard + RCA / Jack adapters)
-- [ ] Read about how to install Puredata on Raspberry Pi and save the link in the "Resources" section
+- [X] Watch Pure Data tutorials on input devices and subpatches
+- [X] Watch Pure Data tutorials on various effects
+- [X] Read about how to install Puredata on Raspberry Pi and save the link in the "Resources" section
 - [ ] Read about how to install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
 - [ ] Read about Kotlin Jetpack Compose
 - [ ] Read about Kotlin Android Bluetooth connectivity
@@ -41,6 +40,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [9 Best Open-Source Gantt Chart Software For Linux](https://itsfoss.com/open-source-gantt-chart/) 
 
 ### Pure Data
+- [Installing Pure Data on Raspberry Pi](http://pi.bek.no/pdInstall/)
 - [Pure Data documentation](http://archive.flossmanuals.net/pure-data/)
 - [Pure Data documentation - PDF](http://archive.flossmanuals.net/_booki/pure-data/pure-data.pdf)
 - [List of Pure Data objects](http://blazicek.net/list_of_pure_data_objects.html)
