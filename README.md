@@ -76,7 +76,35 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 
 ![MobilePedalPi setup diagram](/diagram-images/diagram.png)
 
+## UI/UX elements needed
+
+### Starting screen
+
+- high-quality close-up image of a guitar at the top of the screen
+- short appealing description
+- start button
+- logo at the bottom of the screen
+
+### Pedal switch screen (first screen)
+
+This screen should allow the user to switch between different pedals, turn them on/off and adjust sound settings. By sliding to the right, the user is led to the second screen.
+
+- Wooden background
+- An image of a pedal positioned in the center of the screen + input/output Jack wires 
+- Two arrows placed side-by-side centered under the pedal image
+- The logo is positioned in the upper left corner of the screen
+
+## Pedal pipelines screen (second screen)
+The second screen allows the user to build a pipeline i.e. a sequence of pedals, each taking as input either the guitar signal directly or the output of other pedals.
+
+- Wooden background
+- Jack ports positioned in the center of each side of the screen 
+- At the bottom of the screen, an up-arrow is placed which, if pressed, triggers a pop-up containing multiple options of pedals. The list of pedals can be scrolled horizontally. 
+- To place a pedal on the floor, drag it from the pop-up outwards
+- To connect pedals to one another, drag cables from the previously-mentioned pop-up
+
 ## Some remarks
+
 - 1/4" &rarr; 6.35 mm
 - 1/8" &rarr; 3.5 mm
 
