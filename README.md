@@ -14,14 +14,15 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Watch Pure Data tutorials on various effects
 - [X] Read about how to install Puredata on Raspberry Pi and save the link in the "Resources" section
 - [X] Read about how to install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
+- [X] Read about UI/UX for mobile apps
+- [X] Think about what elements are necessary in the user interface
+- [X] Create wireframes for the UI
+- [ ] Add the actual images and colors on top of the wireframes for an initial version of the UI
 - [ ] Read about Kotlin Jetpack Compose
 - [ ] Read about Kotlin Android Bluetooth connectivity
-- [ ] Watch some Kotlin Android tutorials
-- [ ] Design UI/UX
 - [ ] Create UML diagrams for the app structure
 - [ ] Re-read/refresh knowledge on design patterns
 - [ ] Think of design patterns that could be used
-- [ ] Read about UI/UX for mobile apps
 - [ ] Buy components
 - [ ] Assemble the components
 - [ ] Install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
@@ -87,14 +88,13 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 
 ### Pedal switch screen (first screen)
 
-This screen should allow the user to switch between different pedals, turn them on/off and adjust sound settings. By sliding to the right, the user is led to the second screen.
+This screen should allow the user to switch between different pedals by swiping left and/or right, turn them on/off and adjust sound settings. By sliding downwards, the user is led to the second screen.
 
 - Wooden background
 - An image of a pedal positioned in the center of the screen + input/output Jack wires 
-- Two arrows placed side-by-side centered under the pedal image
 - The logo is positioned in the upper left corner of the screen
 
-## Pedal pipelines screen (second screen)
+### Pedal pipelines screen (second screen)
 The second screen allows the user to build a pipeline i.e. a sequence of pedals, each taking as input either the guitar signal directly or the output of other pedals.
 
 - Wooden background
@@ -103,10 +103,18 @@ The second screen allows the user to build a pipeline i.e. a sequence of pedals,
 - To place a pedal on the floor, drag it from the pop-up outwards
 - To connect pedals to one another, drag cables from the previously-mentioned pop-up
 
+### Wireframe diagrams
+
+![Starting screen](/Wireframes/starting-screen.jpg)
+
+![First screen](/Wireframes/first-screen.jpg)
+
+![Second screen](/Wireframes/second-screen.jpg)
+
 ## Some remarks
 
-- 1/4" &rarr; 6.35 mm
-- 1/8" &rarr; 3.5 mm
+- 1/4" Jack &rarr; 6.35 mm
+- 1/8" Jack &rarr; 3.5 mm
 
 ## Other projects
 - [Multi-effects guitar pedal with touchscreen](https://www.youtube.com/watch?v=JoJEhhwpi9Q)
