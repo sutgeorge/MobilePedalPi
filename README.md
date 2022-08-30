@@ -17,7 +17,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Read about UI/UX for mobile apps
 - [X] Think about what elements are necessary in the user interface
 - [X] Create wireframes for the UI
-- [ ] Add the actual images and colors on top of the wireframes for an initial version of the UI
+- [X] Add the actual images and colors on top of the wireframes for an initial version of the UI
 - [ ] Read about Kotlin Jetpack Compose
 - [ ] Read about Kotlin Android Bluetooth connectivity
 - [ ] Create UML diagrams for the app structure
@@ -75,7 +75,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 
 ## Setup diagram
 
-![MobilePedalPi setup diagram](/diagram-images/diagram.png)
+![MobilePedalPi setup diagram](/Diagram-Images/diagram.png)
 
 ## UI/UX elements needed
 
@@ -103,7 +103,7 @@ The second screen allows the user to build a pipeline i.e. a sequence of pedals,
 - To place a pedal on the floor, drag it from the pop-up outwards
 - To connect pedals to one another, drag cables from the previously-mentioned pop-up
 
-### Wireframe diagrams
+### [Wireframe diagrams](https://wireframe.cc/)
 
 ![Starting screen](/Wireframes/starting-screen.jpg)
 
