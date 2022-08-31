@@ -117,6 +117,8 @@ The second screen allows the user to build a pipeline i.e. a sequence of pedals,
 
 ![First screen](/Wireframes/first-screen-with-images.jpg)
 
+![Second screen](/Wireframes/second-screen-with-images.jpg)
+
 ## Some remarks
 
 - 1/4" Jack &rarr; 6.35 mm
