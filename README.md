@@ -86,6 +86,10 @@ Run the mpv media player software from the terminal with the Youtube link as the
 
 ![MobilePedalPi setup diagram](/Diagram-Images/diagram.png)
 
+## Raspberry Pi+Hifiberry setup
+
+![Raspberry Pi+Hifiberry setup](/Images/raspberry-pi-with-hifiberry-soundcard.jpg) 
+
 ## UI/UX elements needed
 
 ### Starting screen
