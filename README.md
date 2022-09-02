@@ -77,6 +77,11 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Playing test sounds](https://www.hifiberry.com/docs/software/playing-test-sounds/)
 - [Configuring Hifiberry for Linux 5.4 or higher kernel version](https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/)
 
+### Playing Youtube audio with Hifiberry and Raspberry Pi
+Run the mpv media player software from the terminal with the Youtube link as the first parameter and the --no-video option in case a monitor is not available:
+
+> mpv https://www.youtube.com/watch?v=u9bk2MrMGaA --no-video
+
 ## Setup diagram
 
 ![MobilePedalPi setup diagram](/Diagram-Images/diagram.png)
