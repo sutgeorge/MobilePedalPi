@@ -18,15 +18,16 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Think about what elements are necessary in the user interface
 - [X] Create wireframes for the UI
 - [X] Add the actual images and colors on top of the wireframes for an initial version of the UI
+- [X] Buy components
+- [X] Assemble the components
+- [X] Install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
+- [X] Install Pure Data on Raspberry Pi
+- [X] Check if the soundcard works by running a test script from Hifiberry (it generates a sine wave of 1000 Hz)
 - [ ] Read about Kotlin Jetpack Compose
 - [ ] Read about Kotlin Android Bluetooth connectivity
 - [ ] Create UML diagrams for the app structure
 - [ ] Re-read/refresh knowledge on design patterns
 - [ ] Think of design patterns that could be used
-- [ ] Buy components
-- [ ] Assemble the components
-- [ ] Install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
-- [ ] Install Pure Data on Raspberry Pi
 - [ ] Test whether the Puredata effect works with the guitar (Big Jack/small Jack adapter for the guitar cable plugged into the laptop)
 - [ ] Implement a quick initial version of the app
 - [ ] Finish a full initial version of the app
@@ -69,9 +70,12 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Sound Simulator - Pure Data Tutorial #4 - Attack-Decay-Sustain-Release Envelope](https://www.youtube.com/watch?v=W7Pp-DhMA_E)
 - [Pd for Airports](https://www.youtube.com/watch?v=7sTrn39TT7k)
 
-### Hifiberry
-
+### Raspberry Pi/Hifiberry
+- [Running a headless Raspberry Pi through SSH](https://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/)
 - [Updating the kernel for the Hifiberry DAC+ADC soundcard drivers (might not be necessary nowadays, the kernel most likely contains the necessary drivers)](https://www.hifiberry.com/docs/archive/deploying-a-new-linux-kernel-onto-a-raspbian-based-system/)
+- [Hifiberry software configuration](https://www.hifiberry.com/docs/archive/hifiberry-software-configuration/)
+- [Playing test sounds](https://www.hifiberry.com/docs/software/playing-test-sounds/)
+- [Configuring Hifiberry for Linux 5.4 or higher kernel version](https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/)
 
 ## Setup diagram
 
