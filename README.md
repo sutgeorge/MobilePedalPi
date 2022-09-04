@@ -23,7 +23,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Install Hifiberry DAC+ADC soundcard drivers on Raspberry Pi
 - [X] Install Pure Data on Raspberry Pi
 - [X] Check if the soundcard works by running a test script from Hifiberry (it generates a sine wave of 1000 Hz)
-- [ ] Read about Kotlin Jetpack Compose
+- [X] Read about Kotlin Jetpack Compose
 - [ ] Read about Kotlin Android Bluetooth connectivity
 - [ ] Create UML diagrams for the app structure
 - [ ] Re-read/refresh knowledge on design patterns
@@ -76,6 +76,8 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Hifiberry software configuration](https://www.hifiberry.com/docs/archive/hifiberry-software-configuration/)
 - [Playing test sounds](https://www.hifiberry.com/docs/software/playing-test-sounds/)
 - [Configuring Hifiberry for Linux 5.4 or higher kernel version](https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/)
+- [Raspberry Pi Wi-Fi & Bluetooth Setup](https://www.digikey.ro/en/maker/blogs/raspberry-pi-wi-fi-bluetooth-setup-how-to-configure-your-pi-4-model-b-3-model-b)
+- [bluetoothctl: list connected devices](https://superuser.com/questions/1500383/bluetoothctl-list-connected-devices)
 
 ### Playing Youtube audio with Hifiberry and Raspberry Pi
 Run the mpv media player software from the terminal with the Youtube link as the first parameter and the --no-video option in case a monitor is not available:
