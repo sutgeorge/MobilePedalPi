@@ -77,6 +77,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Playing test sounds](https://www.hifiberry.com/docs/software/playing-test-sounds/)
 - [Configuring Hifiberry for Linux 5.4 or higher kernel version](https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/)
 - [Raspberry Pi Wi-Fi & Bluetooth Setup](https://www.digikey.ro/en/maker/blogs/raspberry-pi-wi-fi-bluetooth-setup-how-to-configure-your-pi-4-model-b-3-model-b)
+- [How To Set Up Bluetooth On Raspberry Pi](https://howchoo.com/pi/bluetooth-raspberry-pi)
 - [bluetoothctl: list connected devices](https://superuser.com/questions/1500383/bluetoothctl-list-connected-devices)
 
 ### Playing Youtube audio with Hifiberry and Raspberry Pi
