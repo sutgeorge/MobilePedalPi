@@ -52,6 +52,9 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Pure Data Filters](https://archive.flossmanuals.net/pure-data/audio-tutorials/filters.html)
 - [Pure Data Tutorial](https://puredata.info/docs/StartHere/)
 - [Pure Data error: "priority 6 scheduling failed; running at normal priority"](https://www.reddit.com/r/puredata/comments/88uwyo/installing_pd_for_linux_mint_18/)
+
+
+```
  Solution:
 	1. Update Kernel    
 	2. Create audio group: sudo groupadd audio
@@ -64,6 +67,9 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 		#@audio   -  nice       -19
  
 	6. Reboot
+```
+
+
 - [Pure Data Guitar Pedal - Pure Data Example Project](https://www.youtube.com/watch?v=DJCoOr4uHD4)
 - [Sound Simulator - Pure Data Tutorial #1 - Simple Button + Message + Object patch](https://www.youtube.com/watch?v=1o5Wasmd8yU)
 - [Sound Simulator - Pure Data Tutorial #2 - Additive Synth, Overtone Generator](https://www.youtube.com/watch?v=JtT_bZeoKzk)
@@ -139,6 +145,10 @@ The second screen allows the user to build a pipeline i.e. a sequence of pedals,
 ![First screen](/Wireframes/first-screen-with-images.jpg)
 
 ![Second screen](/Wireframes/second-screen-with-images.jpg)
+
+### Navigation schema
+
+![Navigation schema](/Diagram-Images/navigation-schema.png)
 
 ## Some remarks
 
