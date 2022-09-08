@@ -30,6 +30,8 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [ ] Create UML diagrams for the app structure
 - [ ] Re-read/refresh knowledge on design patterns
 - [ ] Think of design patterns that could be used
+- [ ] Run Pure Data on the Raspberry Pi and check if the guitar can be heard in-real-time with the headphones 
+- [ ] Install ElkAudioOS or HifiberryOS (if neither the adjusted sound card settings nor the cabling improve the sound quality) 
 - [ ] Implement a quick initial version of the app
 - [ ] Finish a full initial version of the app
 - [ ] Test it
