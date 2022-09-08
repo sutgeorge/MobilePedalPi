@@ -86,6 +86,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Raspberry Pi Wi-Fi & Bluetooth Setup](https://www.digikey.ro/en/maker/blogs/raspberry-pi-wi-fi-bluetooth-setup-how-to-configure-your-pi-4-model-b-3-model-b)
 - [How To Set Up Bluetooth On Raspberry Pi](https://howchoo.com/pi/bluetooth-raspberry-pi)
 - [bluetoothctl: list connected devices](https://superuser.com/questions/1500383/bluetoothctl-list-connected-devices)
+- [Recording audio on Raspberry Pi with Hifiberry](https://www.hifiberry.com/docs/software/record-audio-on-your-raspberry-pi/)
 
 ### Kotlin Multiplatform
 
