@@ -26,10 +26,10 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Read about Kotlin Jetpack Compose
 - [X] Read about Kotlin Android Bluetooth connectivity
 - [X] Search articles explaining how to port a Kotlin/Android app to iOS
+- [X] Test whether the Puredata effect works with the guitar (Big Jack/small Jack adapter for the guitar cable plugged into the laptop)
 - [ ] Create UML diagrams for the app structure
 - [ ] Re-read/refresh knowledge on design patterns
 - [ ] Think of design patterns that could be used
-- [ ] Test whether the Puredata effect works with the guitar (Big Jack/small Jack adapter for the guitar cable plugged into the laptop)
 - [ ] Implement a quick initial version of the app
 - [ ] Finish a full initial version of the app
 - [ ] Test it
