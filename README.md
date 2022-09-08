@@ -155,6 +155,8 @@ The second screen allows the user to build a pipeline i.e. a sequence of pedals,
 - 1/4" Jack &rarr; 6.35 mm
 - 1/8" Jack &rarr; 3.5 mm
 
+![Mono/stereo jack pinout](Images/mono-stereo-jack.png)
+
 ## Other projects
 - [Multi-effects guitar pedal with touchscreen](https://www.youtube.com/watch?v=JoJEhhwpi9Q)
 - [NeuralPi](https://www.youtube.com/watch?v=_3zFD6h6Wrc)
