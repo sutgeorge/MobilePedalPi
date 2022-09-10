@@ -27,7 +27,8 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [X] Read about Kotlin Android Bluetooth connectivity
 - [X] Search articles explaining how to port a Kotlin/Android app to iOS
 - [X] Test whether the Puredata effect works with the guitar (Big Jack/small Jack adapter for the guitar cable plugged into the laptop)
-- [ ] Create UML diagrams for the app structure
+- [X] Create diagrams for the app structure
+- [ ] Create a diagram of the physical cabling for the pedal, guitar and amp
 - [ ] Re-read/refresh knowledge on design patterns
 - [ ] Think of design patterns that could be used
 - [ ] Run Pure Data on the Raspberry Pi and check if the guitar can be heard in-real-time with the headphones 
@@ -155,12 +156,18 @@ This diagram is a mixture of a structural and behavioral UML diagram. Since the 
 
 ![App diagram](/Diagram-Images/app-diagram.png)
 
+### Cabling
+
+- [What happens if you plug a mono plug into a stereo jack?](https://www.homemusicproducer.com/what-happens-if-you-plug-a-mono-plug-into-a-stereo-jack/)
+
+### Cabling diagram
+
+![Cabling diagram](/Diagram-Images/cabling-ports-diagram.png)
+
 ## Some remarks
 
 - 1/4" Jack &rarr; 6.35 mm
 - 1/8" Jack &rarr; 3.5 mm
-
-![Mono/stereo jack pinout](Images/mono-stereo-jack.png)
 
 ## Other projects
 - [Multi-effects guitar pedal with touchscreen](https://www.youtube.com/watch?v=JoJEhhwpi9Q)
