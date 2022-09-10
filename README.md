@@ -149,9 +149,11 @@ The second screen allows the user to build a pipeline i.e. a sequence of pedals,
 
 ![Second screen](/Wireframes/second-screen-with-images.jpg)
 
-### Navigation schema
+### Project diagram
 
-![Navigation schema](/Diagram-Images/navigation-schema.png)
+This diagram is a mixture of a structural and behavioral UML diagram. Since the Jetpack Compose toolkit works based on functions/so-called "composables" rather than classes, a UML class diagram wouldn't make much sense, but aggregation/composition relationships are still used nonetheless. The double-arrowed relationship represents a swipe action prompted by the user. 
+
+![App diagram](/Diagram-Images/app-diagram.png)
 
 ## Some remarks
 
