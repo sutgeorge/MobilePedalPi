@@ -25,11 +25,13 @@ import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mobilepedalpiapp.ui.theme.MobilePedalPiAppTheme
 import com.example.mobilepedalpiapp.utils.guitarImages
+import com.example.mobilepedalpiapp.utils.ButtonWithColor;
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.calculateCurrentOffsetForPage
@@ -47,6 +49,26 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+@Composable
+fun MainText() {
+    Text(
+        "MobilePedalPi",
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 40.dp),
+        textAlign = TextAlign.Center,
+        fontSize = 25.sp,
+        fontWeight = FontWeight.Bold
+    )
+
+    Text(
+        "A variety of guitar pedal effects and combinations of them enabled by " +
+                "Bluetooth communication with a soundcard-equipped Raspberry Pi",
+        modifier = Modifier.padding(20.dp),
+        fontSize = 20.sp
+    )
 }
 
 @OptIn(ExperimentalPagerApi::class)
@@ -110,7 +132,21 @@ fun AutoSliding() {
             modifier = Modifier
                 .weight(2f),
             horizontalArrangement = Arrangement.Center
-        ) {}
+        ) {
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                MainText()
+                ButtonWithColor(text = "Start jamming",
+                                onClick = {
+
+                                }, width = 200.dp, height=80.dp)
+            }
+        }
 
     }
 }
+
+
