@@ -22,10 +22,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.paint
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -206,13 +208,29 @@ fun SinglePedalScreen(navController: NavController) {
                 orientation = Orientation.Vertical,
                 onDragStarted = {
                     Log.d(TAG, "Drag started")
-                    navController.navigate(Screen.SecondScreen.route) },
+                    navController.navigate(Screen.SecondScreen.route)
+                },
                 onDragStopped = { Log.d(TAG, "Drag ended") }
             )
         ,
         contentAlignment = Alignment.Center
     ) {
-        Text(text = "Hello world!")
+        Image(
+            painter = painterResource(id = R.drawable.floor),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight(),
+            contentScale = ContentScale.FillBounds
+        )
+
+        Box(modifier = Modifier
+            .width(20.dp)
+            .height(20.dp)
+            .background(
+                colorResource(id = R.color.white)
+            )
+        ) {}
     }
 }
 
@@ -228,12 +246,27 @@ fun MultiplePedalScreen(navController: NavController) {
                 orientation = Orientation.Vertical,
                 onDragStarted = {
                     Log.d(TAG, "Drag started")
-                    navController.navigate(Screen.FirstScreen.route) },
+                    navController.navigate(Screen.FirstScreen.route)
+                },
                 onDragStopped = { Log.d(TAG, "Drag ended") }
             )
         ,
         contentAlignment = Alignment.Center
     ) {
-        Text(text = "Hello world 2!")
+        Image(
+            painter = painterResource(id = R.drawable.floor),
+            contentDescription = null,
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight(),
+            contentScale = ContentScale.FillBounds
+        )
+        Box(modifier = Modifier
+            .width(20.dp)
+            .height(20.dp)
+            .background(
+                colorResource(id = R.color.black)
+            )
+        ) {}
     }
 }
