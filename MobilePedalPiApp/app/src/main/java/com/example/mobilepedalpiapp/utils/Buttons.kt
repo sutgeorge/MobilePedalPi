@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun ButtonWithColor(text: String, onClick: () -> Unit, width: Dp, height: Dp){
@@ -18,6 +19,6 @@ fun ButtonWithColor(text: String, onClick: () -> Unit, width: Dp, height: Dp){
         onClick = onClick,
         colors = ButtonDefaults.buttonColors(backgroundColor = Color.DarkGray)
     ) {
-        Text(text = text, color = Color.White)
+        Text(text = text, color = Color.White, fontSize = 20.sp)
     }
 }
