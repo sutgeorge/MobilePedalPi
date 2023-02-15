@@ -1,5 +1,9 @@
 package com.example.mobilepedalpiapp
 
+import androidx.compose.animation.*
+import androidx.compose.animation.core.CubicBezierEasing
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -15,31 +19,51 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
 import com.example.mobilepedalpiapp.utils.ButtonWithColor
 import com.example.mobilepedalpiapp.utils.guitarImages
+import com.google.accompanist.navigation.animation.AnimatedNavHost
+import com.google.accompanist.navigation.animation.composable
+import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.rememberPagerState
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.yield
 
+val springSpec = spring<IntOffset>(dampingRatio = Spring.DampingRatioMediumBouncy)
+val tweenSpec = tween<IntOffset>(durationMillis = 1000, easing = CubicBezierEasing(0.08f,0.93f,0.68f,1.27f))
+
+@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun Navigation() {
-    val navController = rememberNavController();
+    val navController = rememberAnimatedNavController();
 
-    NavHost(navController = navController, startDestination = Screen.MainScreen.route) {
-        composable(route = Screen.MainScreen.route) {
+    AnimatedNavHost(navController = navController, startDestination = Screen.MainScreen.route) {
+        composable(
+            route = Screen.MainScreen.route,
+            enterTransition = {
+                slideInVertically(initialOffsetY = { 1000 }, animationSpec = springSpec)
+            },
+            exitTransition = {
+                slideOutVertically(targetOffsetY = { -2000 }, animationSpec = springSpec)
+            },
+        ) {
             MainScreen(navController = navController)
         }
 
-        composable(route = Screen.FirstScreen.route) {
+        composable(
+            route = Screen.FirstScreen.route,
+            enterTransition = {
+                slideInVertically(initialOffsetY = { 1000 }, animationSpec = springSpec)
+            },
+            exitTransition = {
+                slideOutVertically(targetOffsetY = { -2000 }, animationSpec = springSpec)
+            },
+        ) {
             FirstScreen(navController = navController)
         }
     }
