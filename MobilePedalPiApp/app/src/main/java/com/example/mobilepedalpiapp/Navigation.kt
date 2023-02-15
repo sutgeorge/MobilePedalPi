@@ -1,5 +1,7 @@
 package com.example.mobilepedalpiapp
 
+import android.content.ContentValues.TAG
+import android.util.Log
 import androidx.compose.animation.*
 import androidx.compose.animation.core.CubicBezierEasing
 import androidx.compose.animation.core.Spring
@@ -7,14 +9,22 @@ import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.gestures.Orientation
+import androidx.compose.foundation.gestures.detectDragGestures
+import androidx.compose.foundation.gestures.draggable
+import androidx.compose.foundation.gestures.rememberDraggableState
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -64,7 +74,19 @@ fun Navigation() {
                 slideOutVertically(targetOffsetY = { -2000 }, animationSpec = springSpec)
             },
         ) {
-            FirstScreen(navController = navController)
+            SinglePedalScreen(navController = navController)
+        }
+        
+        composable(
+            route = Screen.SecondScreen.route,
+            enterTransition = {
+                slideInVertically(initialOffsetY = { 1000 }, animationSpec = springSpec)
+            },
+            exitTransition = {
+                slideOutVertically(targetOffsetY = { -2000 }, animationSpec = springSpec)
+            },
+        ) {
+            MultiplePedalScreen(navController = navController)
         }
     }
 }
@@ -173,11 +195,45 @@ fun MainScreen(navController: NavController) {
 }
 
 @Composable
-fun FirstScreen(navController: NavController) {
+fun SinglePedalScreen(navController: NavController) {
+    val state = rememberDraggableState(onDelta = { delta -> Log.d(TAG, "Dragged $delta") })
+
     Box(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .draggable(
+                state = state,
+                orientation = Orientation.Vertical,
+                onDragStarted = {
+                    Log.d(TAG, "Drag started")
+                    navController.navigate(Screen.SecondScreen.route) },
+                onDragStopped = { Log.d(TAG, "Drag ended") }
+            )
+        ,
         contentAlignment = Alignment.Center
     ) {
         Text(text = "Hello world!")
+    }
+}
+
+@Composable
+fun MultiplePedalScreen(navController: NavController) {
+    val state = rememberDraggableState(onDelta = { delta -> Log.d(TAG, "Dragged $delta") })
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .draggable(
+                state = state,
+                orientation = Orientation.Vertical,
+                onDragStarted = {
+                    Log.d(TAG, "Drag started")
+                    navController.navigate(Screen.FirstScreen.route) },
+                onDragStopped = { Log.d(TAG, "Drag ended") }
+            )
+        ,
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text = "Hello world 2!")
     }
 }
