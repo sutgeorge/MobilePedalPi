@@ -27,6 +27,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalWindowInfo
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -55,6 +56,7 @@ fun Navigation() {
     val navController = rememberAnimatedNavController();
 
     AnimatedNavHost(navController = navController, startDestination = Screen.MainScreen.route) {
+
         composable(
             route = Screen.MainScreen.route,
             enterTransition = {
@@ -68,7 +70,7 @@ fun Navigation() {
         }
 
         composable(
-            route = Screen.FirstScreen.route,
+            route = Screen.SinglePedalScreen.route,
             enterTransition = {
                 slideInVertically(initialOffsetY = { 1000 }, animationSpec = springSpec)
             },
@@ -80,7 +82,7 @@ fun Navigation() {
         }
         
         composable(
-            route = Screen.SecondScreen.route,
+            route = Screen.MultiplePedalScreen.route,
             enterTransition = {
                 slideInVertically(initialOffsetY = { 1000 }, animationSpec = springSpec)
             },
@@ -183,7 +185,7 @@ fun AutoSliding(navController: NavController) {
                 MainText()
                 ButtonWithColor(text = "Start jamming",
                     onClick = {
-                        navController.navigate(Screen.FirstScreen.route)
+                        navController.navigate(Screen.SinglePedalScreen.route)
                     }, width = 200.dp, height = 80.dp
                 )
             }
@@ -208,19 +210,17 @@ fun SinglePedalScreen(navController: NavController) {
                 orientation = Orientation.Vertical,
                 onDragStarted = {
                     Log.d(TAG, "Drag started")
-                    navController.navigate(Screen.SecondScreen.route)
+                    navController.navigate(Screen.MultiplePedalScreen.route)
                 },
                 onDragStopped = { Log.d(TAG, "Drag ended") }
             )
-        ,
+            .padding(WindowInsets.statusBars.asPaddingValues()),
         contentAlignment = Alignment.Center
     ) {
         Image(
             painter = painterResource(id = R.drawable.floor),
             contentDescription = null,
-            modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight(),
+            modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.FillBounds
         )
 
@@ -246,19 +246,17 @@ fun MultiplePedalScreen(navController: NavController) {
                 orientation = Orientation.Vertical,
                 onDragStarted = {
                     Log.d(TAG, "Drag started")
-                    navController.navigate(Screen.FirstScreen.route)
+                    navController.navigate(Screen.SinglePedalScreen.route)
                 },
                 onDragStopped = { Log.d(TAG, "Drag ended") }
             )
-        ,
+            .padding(WindowInsets.statusBars.asPaddingValues()),
         contentAlignment = Alignment.Center
     ) {
         Image(
             painter = painterResource(id = R.drawable.floor),
             contentDescription = null,
-            modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight(),
+            modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.FillBounds
         )
         Box(modifier = Modifier
