@@ -57,6 +57,7 @@ class MainActivity : ComponentActivity() {
                 SideEffect {
                     systemUiController.setStatusBarColor(color = Transparent)
                     systemUiController.isStatusBarVisible = false;
+                    systemUiController.isNavigationBarVisible = false;
                 }
 
                 Navigation()
