@@ -86,6 +86,33 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [How To Set Up Bluetooth On Raspberry Pi](https://howchoo.com/pi/bluetooth-raspberry-pi)
 - [bluetoothctl: list connected devices](https://superuser.com/questions/1500383/bluetoothctl-list-connected-devices)
 - [Recording audio on Raspberry Pi with Hifiberry](https://www.hifiberry.com/docs/software/record-audio-on-your-raspberry-pi/)
+- [Install BlueZ on Raspberry Pi](https://www.argenox.com/library/bluetooth-low-energy/using-raspberry-pi-ble/)
+
+Adding `#include <linux/sockios.h>` to the include section of BlueZ tools/l2test.c and tools/rctest.c solves the ["siocgstamp undeclared" error](https://github.com/LibtraceTeam/libtrace/issues/117).
+
+Default user/password: pi/raspberry
+
+### Bluetooth Low Energy
+
+In Bluetooth Low Energy (BLE), the roles of "central" and "peripheral" refer to the two primary device roles in a BLE connection. The central device typically initiates the connection and controls the communication, while the peripheral device responds to the central's requests.
+
+When it comes to data transmission, the communication in BLE is generally initiated by the central device. The central sends data to the peripheral(s) in what is known as the "master-slave" communication model. The central (master) controls the data exchange and can send commands, requests, or data packets to one or more peripherals (slaves) that are connected to it.
+
+Here's a breakdown of the data flow in a typical BLE communication session:
+
+- Central (Master) to Peripheral (Slave): The central initiates communication by sending data packets to the peripheral. These packets may contain commands, data, or requests for information from the peripheral.
+
+- Peripheral (Slave) to Central (Master): The peripheral can respond to the central's requests by sending data packets back to the central. The peripheral cannot initiate communication on its own; it can only respond to the central's requests.
+
+- Connection Interval: BLE communication occurs within specific time intervals known as the "connection interval." During these intervals, the central and peripheral devices exchange data.
+
+- Advertising and Scanning: Before establishing a connection, the peripheral device advertises its presence, and the central scans for nearby peripherals. Once the central discovers the peripheral it wants to communicate with, it initiates the connection process.
+
+Overall, the central device has more control over the data flow and communication process, while the peripheral device responds to the central's requests. This master-slave architecture in BLE allows for efficient and low-power communication, making it suitable for various applications like wearables, IoT devices, and more.
+
+In this case, the Raspberry Pi is a peripheral, while the Android device is a central.
+
+- [Create a BLE GATT server UART service on Raspberry Pi](https://scribles.net/creating-ble-gatt-server-uart-service-on-raspberry-pi/)
 
 ### Kotlin Multiplatform
 
