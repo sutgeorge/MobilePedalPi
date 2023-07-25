@@ -41,10 +41,6 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 
 ## Resources
 
-### Project management
-- [How to create a PERT chart](https://asana.com/resources/pert-chart)
-- [9 Best Open-Source Gantt Chart Software For Linux](https://itsfoss.com/open-source-gantt-chart/) 
-
 ### Pure Data
 - [Installing Pure Data on Raspberry Pi](http://pi.bek.no/pdInstall/)
 - [Pure Data documentation](http://archive.flossmanuals.net/pure-data/)
@@ -81,7 +77,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Pd for Airports](https://www.youtube.com/watch?v=7sTrn39TT7k)
 
 ### Raspberry Pi/Hifiberry
-- [Running a headless Raspberry Pi through SSH](https://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/)
+- [Running a headless Raspberry Pi through SSH](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
 - [Updating the kernel for the Hifiberry DAC+ADC soundcard drivers (might not be necessary nowadays, the kernel most likely contains the necessary drivers)](https://www.hifiberry.com/docs/archive/deploying-a-new-linux-kernel-onto-a-raspbian-based-system/)
 - [Hifiberry software configuration](https://www.hifiberry.com/docs/archive/hifiberry-software-configuration/)
 - [Playing test sounds](https://www.hifiberry.com/docs/software/playing-test-sounds/)
