@@ -51,6 +51,7 @@ A Kotlin/Android Raspberry Pi-based app serving as a convenient replacement for 
 - [Pure Data Filters](https://archive.flossmanuals.net/pure-data/audio-tutorials/filters.html)
 - [Pure Data Tutorial](https://puredata.info/docs/StartHere/)
 - [Pure Data error: "priority 6 scheduling failed; running at normal priority"](https://www.reddit.com/r/puredata/comments/88uwyo/installing_pd_for_linux_mint_18/)
+- [Pure Data external programming in C](https://www.youtube.com/watch?v=Ysjf78lP5zw)
 
 
 ```
@@ -92,6 +93,24 @@ Adding `#include <linux/sockios.h>` to the include section of BlueZ tools/l2test
 
 Default user/password: pi/raspberry
 
+#### Note!
+
+To setup the Raspberry Pi WiFi connection easily, just create a `wpa_supplicant.conf` file and place it in the `boot/` partition of the MicroSD card.
+
+The file should look something like this:
+
+```
+country=us
+update_config=1
+ctrl_interface=/var/run/wpa_supplicant
+
+network={
+ scan_ssid=1
+ ssid="MyNetworkSSID"
+ psk="Pa55w0rd1234"
+}
+```
+
 ### Bluetooth Low Energy
 
 In Bluetooth Low Energy (BLE), the roles of "central" and "peripheral" refer to the two primary device roles in a BLE connection. The central device typically initiates the connection and controls the communication, while the peripheral device responds to the central's requests.
@@ -117,6 +136,23 @@ In this case, the Raspberry Pi is a peripheral, while the Android device is a ce
 ### Kotlin Multiplatform
 
 - [Make your Android application work on iOS – tutorial](https://kotlinlang.org/docs/multiplatform-mobile-integrate-in-existing-app.html)
+
+### Kotlin Flow API
+
+SharedFlow and StateFlow are part of the Kotlin Flow API, which is a part of Kotlin's Coroutines library. They are designed for reactive programming and handling streams of data asynchronously. Both SharedFlow and StateFlow are used for similar purposes, but they have some differences in how they handle data sharing and state preservation.
+
+SharedFlow:
+
+SharedFlow represents a hot flow, meaning it can start emitting data even if there are no collectors listening to it. Multiple collectors can listen to the same SharedFlow, and they will all receive the emitted values.
+When a new collector starts observing a SharedFlow, it will receive the most recent emitted value (if any) immediately after collecting.
+SharedFlow does not preserve state for new collectors. If a collector starts observing a SharedFlow after values have been emitted, it will only receive the new values from that point onwards, not the previous values.
+
+StateFlow:
+
+StateFlow is an extension of SharedFlow and is designed specifically for handling state updates.
+StateFlow is a hot flow, similar to SharedFlow, and can start emitting data even if no collectors are listening to it.
+However, StateFlow preserves the most recent emitted value, even for new collectors. When a new collector starts observing a StateFlow, it will immediately receive the most recent value.
+StateFlow is particularly useful for representing a single source of truth for state management, such as representing the current state of a user interface component.
 
 ### Playing Youtube audio with Hifiberry and Raspberry Pi
 Run the mpv media player software from the terminal with the Youtube link as the first parameter and the --no-video option in case a monitor is not available:
